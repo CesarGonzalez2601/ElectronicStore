@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #343a40; /* Fondo oscuro */
+            color: #f8f9fa; /* Color de texto claro */
+        }
+        .container {
+            margin-top: 100px;
+            padding: 20px;
+            background-color: #495057; /* Fondo de la tarjeta */
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            color: #f8f9fa;
+            margin-bottom: 40px;
+        }
+        .btn {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            transition: transform 0.3s ease;
+        }
+        .btn:hover {
+            transform: scale(1.05); /* Efecto de hover */
+        }
+        .text-center {
+            color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container text-center">
+    <h1>Bienvenido a la Página de Inicio</h1>
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <a th:href="@{/pagina1}" class="btn btn-primary btn-lg">Clientes</a>
+        </div>
+        <div class="col-md-4">
+            <a th:href="@{/pagina2}" class="btn btn-success btn-lg">Productos</a>
+        </div>
+        <div class="col-md-4">
+            <a th:href="@{/pagina3}" class="btn btn-danger btn-lg">Usuarios</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
